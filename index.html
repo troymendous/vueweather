@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Message Multiplier</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+</head>
+<body>
+
+<div id="app">
+    <label for="multiplier">Enter multiplier:</label>
+    <input type="number" id="multiplier" v-model="multiplier" min="1" />
+
+    <button @click="multiplyMessage">
+        Multiply Penis
+    </button>
+
+    <p>{{ count }} (x{{ message }})</p>
+</div>
+
+<script>
+  const { createApp, ref } = Vue;
+
+  createApp({
+    setup() {
+      const message = ref('Hello My Lovely Penis!');
+      const count = ref(1); 
+      const multiplier = ref(1); 
+
+      function multiplyMessage() {
+        let newMessage = "";
+        for (let i = 0;i < multiplier.value; i++) { 
+          newMessage += ' ' + "Penis"; 
+
+        }
+        message.value = newMessage;
+        count.value *= multiplier.value; 
+      }
+      
+      return {
+        message,
+        count,
+        multiplier,
+        multiplyMessage
+      };
+    }
+  }).mount('#app');
+</script>
+    
+</body>
+</html>
+
