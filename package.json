@@ -8,8 +8,22 @@
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
   "dependencies": {
     "vue": "^3.5.13"
-  }
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
+    "tailwindcss": "^4.0.12",
+    "tailwindcss-cli": "^0.1.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/troymendous/vueweather.git"
+  },
+  "bugs": {
+    "url": "https://github.com/troymendous/vueweather/issues"
+  },
+  "homepage": "https://github.com/troymendous/vueweather#readme",
+  "description": ""
 }
